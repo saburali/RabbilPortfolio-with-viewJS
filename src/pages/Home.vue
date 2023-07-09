@@ -1,12 +1,21 @@
 <template>
   <div>
-    <h1>Home Page</h1>
+    <Header />
+    <!-- Main Content -->
+    <Footer />
   </div>
 </template>
 
 <script>
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+
 export default {
-  name: "HomePage"
+  name: "HomePage",
+  components: {
+    Header,
+    Footer
+  }
 }
 </script>
 
