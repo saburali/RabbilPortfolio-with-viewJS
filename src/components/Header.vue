@@ -110,10 +110,6 @@ export default {
   color: var(--themeColor);
 }
 
-.mouseScroll .position-sticky {
-  top: 80px;
-}
-
 @media only screen and (max-width: 400px) {
   .navbar-nav .nav-link {
     text-align: center;
