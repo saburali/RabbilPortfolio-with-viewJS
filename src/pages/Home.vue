@@ -6,6 +6,7 @@
     <TopRecommendation />
     <WhyChooseUs />
     <TopPikedCourse />
+<!-- <BrowseCourses /> -->
     <Footer />
   </div>
 </template>
@@ -17,10 +18,12 @@ import Footer from '../components/Footer';
 import TopRecommendation from "@/components/TopRecommendation";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import TopPikedCourse from "@/components/TopPickedCourse";
+// import BrowseCourses from "@/components/BrowseCourse";
 
 export default {
   name: "HomePage",
   components: {
+    // BrowseCourses,
     TopRecommendation,
     Header,
     Hero,
