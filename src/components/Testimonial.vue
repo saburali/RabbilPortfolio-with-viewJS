@@ -96,6 +96,7 @@ import 'swiper/swiper-bundle.css';
 import { ref } from 'vue';
 
 export default {
+  name: "TestimonialComponent",
   components: { Swiper, SwiperSlide },
   pagination: {
     el: '.swiper-pagination',
