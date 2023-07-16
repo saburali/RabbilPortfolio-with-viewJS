@@ -8,6 +8,7 @@
     <TopPikedCourse />
     <BrowseCourses />
     <Testimonial />
+    <Contact />
     <Footer />
   </div>
 </template>
@@ -21,10 +22,12 @@ import WhyChooseUs from "@/components/WhyChooseUs";
 import TopPikedCourse from "@/components/TopPickedCourse";
 import BrowseCourses from "@/components/BrowseCourse";
 import Testimonial from "@/components/Testimonial";
+import Contact from "@/components/Contact";
 
 export default {
   name: "HomePage",
   components: {
+    Contact,
     Testimonial,
     BrowseCourses,
     TopRecommendation,
