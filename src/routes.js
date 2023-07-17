@@ -6,6 +6,7 @@ import Mentor from "@/pages/Mentor";
 import Contact from "@/pages/Contact";
 import Join from "@/pages/Join";
 import CoursesPageOne from "@/pages/CoursesPageOne";
+import CoursesPageTwo from "@/pages/CoursesPageTwo";
 
 const routes = [
     {
@@ -27,6 +28,11 @@ const routes = [
         name: 'Course One',
         path: '/courses-page-one',
         component: CoursesPageOne
+    },
+    {
+        name: 'Course Two',
+        path: '/courses-page-two',
+        component: CoursesPageTwo
     },
     {
         name: 'Mentor',
