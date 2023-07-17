@@ -9,14 +9,12 @@
     <BrowseCourses />
     <Testimonial />
     <Contact />
-    <Footer />
   </div>
 </template>
 
 <script>
 import Header from '../components/Header';
 import Hero from "@/components/Hero";
-import Footer from '../components/Footer';
 import TopRecommendation from "@/components/TopRecommendation";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import TopPikedCourse from "@/components/TopPickedCourse";
@@ -35,7 +33,6 @@ export default {
     Hero,
     WhyChooseUs,
     TopPikedCourse,
-    Footer
   }
 }
 </script>
