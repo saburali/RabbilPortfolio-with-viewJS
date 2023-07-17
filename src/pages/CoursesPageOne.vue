@@ -13,7 +13,6 @@
   <!-- Top Recommendation -->
   <TopRecommendationViewer />
 
-  <!-- Suggest Course -->
   <!-- Suggested Courses -->
   <div class="pt-5 lightDeepBG-2 slick-carousel-arrow position-relative top-left-circleBG suggested-course-components">
     <div class="container mb-4">
@@ -38,16 +37,30 @@
       <CoursePriceCardSlider />
     </div>
   </div>
+
+  <!-- Picked Course -->
+  <PickedCourseViewer />
+
+  <!-- Testimonial -->
+  <TestimonialViewer />
+
+  <!-- Contact -->
+  <ContactComponents />
 </template>
 
 <script>
 import SmallHero from "@/components/SmallHero";
+import TestimonialViewer from "@/components/TestimonialViewer";
 import TopRecommendationViewer from "@/components/TopRecommendationViewer";
 import CoursePriceCardSlider from "@/components/CoursePriceCardSlider";
+import PickedCourseViewer from "@/components/PickedCourseViewer";
+import ContactComponents from "@/components/Contact";
 
 export default {
   name: "CoursesPageOne",
-  components: {CoursePriceCardSlider, SmallHero, TopRecommendationViewer}
+  components: {
+    ContactComponents,
+    TestimonialViewer, PickedCourseViewer, CoursePriceCardSlider, SmallHero, TopRecommendationViewer}
 }
 </script>
 
