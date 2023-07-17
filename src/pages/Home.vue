@@ -1,49 +1,52 @@
 <template>
   <div>
-    <Header />
-    <!-- Main Content -->
-    <Hero />
+    <!-- Navbar / Appbar -->
+    <Header/>
+
+    <!-- Hero / Banner -->
+    <Hero/>
 
     <!-- Top Recommendation -->
-    <TopRecommendationViewer />
+    <TopRecommendationViewer/>
 
     <!-- Why Choose US -->
-    <WhyChooseUs />
+    <WhyChooseUs/>
 
     <!-- Top Picked Course -->
-    <PickedCourseViewer />
+    <PickedCourseViewer/>
 
     <!-- Browse Course -->
-    <BrowseCoursesViewer />
+    <BrowseCoursesViewer/>
 
     <!-- Testimonial -->
-    <TestimonialViewer />
+    <TestimonialViewer/>
 
-    <Contact />
+    <!-- Contact -->
+    <Contact/>
   </div>
 </template>
 
 <script>
-import Header from '../components/Header';
 import Hero from "@/components/Hero";
+import Header from '../components/Header';
+import Contact from "@/components/Contact";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import TestimonialViewer from "@/components/TestimonialViewer";
-import Contact from "@/components/Contact";
-import BrowseCoursesViewer from "@/components/BrowseCoursesViewer";
 import PickedCourseViewer from "@/components/PickedCourseViewer";
+import BrowseCoursesViewer from "@/components/BrowseCoursesViewer";
 import TopRecommendationViewer from "@/components/TopRecommendationViewer";
 
 export default {
   name: "HomePage",
   components: {
-    TopRecommendationViewer,
+    Hero,
+    Header,
+    Contact,
+    WhyChooseUs,
+    TestimonialViewer,
     PickedCourseViewer,
     BrowseCoursesViewer,
-    Contact,
-    TestimonialViewer,
-    Header,
-    Hero,
-    WhyChooseUs,
+    TopRecommendationViewer,
   }
 }
 </script>
