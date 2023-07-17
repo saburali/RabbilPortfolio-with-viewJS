@@ -7,11 +7,23 @@
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
-  <body>
+  <body id="body">
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
+
+  <script>
+      window.onscroll = function() {
+          var nav = document.getElementById('body');
+          if ( window.pageYOffset > 700 ) {
+              nav.classList.add("navbar-fixed");
+          }
+          else {
+              nav.classList.remove("navbar-fixed");
+          }
+      }
+  </script>
   </body>
 </html>

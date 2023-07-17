@@ -16,7 +16,7 @@
       <div class="py-3 py-md-5">
         <div class="row">
           <div class="col-md-12 col-lg-3">
-            <div class="position-sticky position-top-15 shadow-sm rounded p-3 mb-4">
+            <div class="position-sticky position-top-15 nav-position-top-80 shadow-sm rounded p-3 mb-4">
               <div class="text-center">
                 <img class="img-fluid img-thumbnail" :src="user" alt="user-avatar" style="max-width: 224px" />
                 <h4 class="bodyLarge fw-bold text-uppercase mt-3"> Rabbil Hasan </h4>
@@ -246,4 +246,7 @@ export default {
 
 <style scoped>
 /* Include Style */
+.navbar-fixed .nav-position-top-80 {
+  top: 80px;
+}
 </style>
