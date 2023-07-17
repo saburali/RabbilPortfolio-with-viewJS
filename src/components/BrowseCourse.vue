@@ -1,5 +1,5 @@
 <template>
-    <div class="mb-0 mb-md-4 pb-5">
+    <div class="mb-0 mb-md-4 pb-2">
         <router-link :to="distention">
           <div class="card mx-2 border-0 border-rounded shadow-sm">
             <img :src="require(`../assets/images/${image}`)" class="card-img-top img-fluid rounded-top"
