@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-5 themeBG position-relative testimonials testimonialsBG">
+  <div class="pt-5 pb-5 themeBG position-relative testimonials testimonialsBG">
     <div class="container">
       <div class="row">
         <div class="col-md-4 col-lg-6 mb-5 mb-md-0">
