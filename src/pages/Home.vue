@@ -22,28 +22,7 @@
     <WhyChooseUs />
 
     <!-- Top Picked Course -->
-    <div class="pt-5 pb-5">
-      <div class="container position-relative">
-        <p class="small-section-title fw-bold themeColor mb-2 headline-2"> Our Course </p>
-        <div class="d-flex justify-content-center">
-          <h2 class="section-title fw-bold mb-4"> Our Top-Picked Courses </h2>
-        </div>
-        <div class="row coursesBG">
-          <div class="col-6 col-md-6 mb-3 mb-md-4 px-6-mx-5758" v-for="item in pickedCourse" :key="item.id">
-            <OurCoursesCard
-                :title="item.title"
-                :image="item.image"
-                :name="item.name"
-                :price="item.price"
-                :review="item.review"
-                :reviewCount="item.reviewCount"
-                :authorImg="item.authorImg"
-                :webVersion="item.webVersion"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
+    <PickedCourseViewer />
 
     <!-- Browse Course -->
     <BrowseCoursesViewer />
@@ -62,24 +41,20 @@ import TopRecommendation from "@/components/TopRecommendation";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import TestimonialViewer from "@/components/TestimonialViewer";
 import Contact from "@/components/Contact";
-import OurCoursesCard from "@/components/OurCoursesCard";
 import BrowseCoursesViewer from "@/components/BrowseCoursesViewer";
+import PickedCourseViewer from "@/components/PickedCourseViewer";
 
 export default {
   name: "HomePage",
   components: {
+    PickedCourseViewer,
     BrowseCoursesViewer,
-    OurCoursesCard,
     Contact,
     TestimonialViewer,
     TopRecommendation,
     Header,
     Hero,
     WhyChooseUs,
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
   },
   data() {
     return {
