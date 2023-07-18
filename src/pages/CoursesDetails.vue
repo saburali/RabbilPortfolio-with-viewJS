@@ -1,5 +1,5 @@
 <template>
-  <h2> Course Page Two </h2>
+  <h2> Course Details </h2>
 </template>
 
 <script>

@@ -1,5 +1,5 @@
 <template>
-  <h2> Course Page Three </h2>
+  <h2> Course Filter </h2>
 </template>
 
 <script>
