@@ -8,12 +8,12 @@
           </router-link>
         </div>
         <div class="col-md-4 mb-4 mb-md-0">
-          <router-link to="/courses-page-two">
+          <router-link to="/courses-filter">
             <div class="w-100 bg-info p-5 text-center text-white fw-bold fs-2 text-uppercase rounded"> Courses Page 02 </div>
           </router-link>
         </div>
         <div class="col-md-4 mb-4 mb-md-0">
-          <router-link to="/courses-page-three">
+          <router-link to="/courses-details">
             <div class="w-100 bg-success p-5 text-center text-white fw-bold fs-2 text-uppercase rounded"> Courses Page 03 </div>
           </router-link>
         </div>
