@@ -4,11 +4,11 @@
       <div class="container">
         <div class="row">
           <div class="mx-auto col-12 col-md-8 col-md-6 text-center">
-            <p class="small-section-title mb-2 headline-2 breadcrumb-link">
+            <p class="small-section-title mb-2 headline-3 breadcrumb-link">
               <router-link class="darkColor" :to="dir_link">{{ dir_name }}</router-link> / <router-link class="darkColor" :to="current_dir_link">{{ current_dir_name }}</router-link>
             </p>
-            <h2 class="themeDarkColor fw-bold headline-1 hero-headline-1-res">
-              {{ title }}
+            <h2 class="themeDarkColor fw-bold headline-2 hero-headline-1-res">
+              <span v-html="formattedTitle" class="br-title-container"></span>
               <br />
               <span class="text-uppercase themeColor dot section-title headline-1-important-min-992">{{ name }}</span>
             </h2>
@@ -33,7 +33,20 @@ export default {
     current_dir_name: String,
     current_dir_link: String,
     description: String
-  }
+  },
+  computed: {
+    formattedTitle() {
+      const words = this.title.split(" ");
+      if (words.length >= 3) {
+        const highlightedWords = words.slice(2).map(word => {
+          return `<span class="themeColor">${word}</span>`;
+        });
+        return [words[0], words[1], ...highlightedWords].join(" ");
+      } else {
+        return this.title;
+      }
+    },
+  },
 };
 </script>
 
@@ -41,7 +54,6 @@ export default {
 /* Include Style */
 .small-hero-bg {
   min-height: 50vh;
-
   background-image: url("../assets/images/sm-hero-shadow.svg");
   background-size: contain;
   background-position: center;

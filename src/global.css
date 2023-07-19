@@ -681,6 +681,23 @@ a {
     background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
 }
 
+/* Dynamic Word Break */
+.br-title-container .br {
+    display: none;
+}
+
+.br-title-container .br:first-child {
+    display: block;
+}
+
+.br-title-container .br {
+    display: none;
+}
+
+.br-title-container .br:first-child {
+    display: block;
+}
+
 /* Responsive */
 @media only screen and (min-width: 992px) {
     .headline-1-important-min-992 {
