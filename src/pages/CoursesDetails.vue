@@ -9,15 +9,25 @@
       name="RABBIL HASAN"
       description="Are you looking for an amazing e-course platform? Don't worry! We got it for you!"
   />
+
+  <!-- Tabs -->
+  <TabsComponents />
+
+  <!-- Contact -->
+  <ContactComponents />
 </template>
 
 
 <script>
 import SmallHero from "@/components/SmallHero";
+import TabsComponents from "@/components/Tabs";
+import ContactComponents from "@/components/Contact";
 
 export default {
   name: "CourseDetails",
   components: {
+    ContactComponents,
+    TabsComponents,
     SmallHero
   }
 }
